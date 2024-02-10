@@ -3,11 +3,10 @@ package service;
 import model.Car;
 
 import java.util.List;
-
 public interface CarService {
-    List<Car> getCarlist();
+    List<Car> getList();
 
-    List<Car> carCount(List<Car> carList, int count);
+    List<Car> getListcount(List<Car> carList, int count);
 }
 
 

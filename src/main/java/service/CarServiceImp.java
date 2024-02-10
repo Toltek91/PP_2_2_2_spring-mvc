@@ -22,12 +22,12 @@ public class CarServiceImp implements CarService {
     }
 
     @Override
-    public List<Car> getCarlist() {
+    public List<Car> getList() {
         return carsList;
     }
 
     @Override
-    public List<Car> carCount(List<Car> carList, int count) {
+    public List<Car> getListcount(List<Car> carList, int count) {
         if (count == 0 || count > 5) return carList;
         return carList.stream().limit(count).collect(Collectors.toList());
     }
